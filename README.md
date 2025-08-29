@@ -137,6 +137,13 @@ This plugin is not affiliated with Discord Inc. or BetterDiscord. Use at your ow
 
 ## 📊 Version History
 
+### v1.5.0
+- **Fixed**: Channel names now persist when switching between DMs and server channels
+- **Enhanced**: Improved MutationObserver with automatic re-application of renames
+- **Added**: Periodic backup check (every 5 seconds) to maintain renames
+- **Improved**: Better DOM change detection and rename persistence
+- **Enhanced**: More robust channel element detection across navigation
+
 ### v1.4.0
 - Complete rewrite with settings panel
 - Improved channel detection algorithms

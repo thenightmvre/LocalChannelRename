@@ -9,6 +9,7 @@ A BetterDiscord plugin that allows you to locally rename Discord channels for a 
 - **Real-time Updates**: Channel names update immediately when added/modified
 - **Safe & Local**: All changes are stored locally and don't affect the actual Discord servers
 
+
 ## 📦 Installation
 
 1. Download `LocalChannelRename.plugin.js` from the [Releases](https://github.com/thenightmvre/LocalChannelRename/releases/tag/DiscordPlugin) page
@@ -18,6 +19,7 @@ A BetterDiscord plugin that allows you to locally rename Discord channels for a 
    - Linux: `~/.config/BetterDiscord/plugins/`
 3. Restart Discord or reload BetterDiscord (Ctrl+R)
 4. Enable the plugin in BetterDiscord settings
+
 
 ## 🚀 Usage
 
@@ -44,9 +46,25 @@ To get a channel's ID:
 2. Right-click on any channel
 3. Select "Copy ID"
 
+
 ## 🔧 How It Works
 
 The plugin uses DOM manipulation to change how channel names are displayed in your Discord client. The actual channel names on Discord servers remain unchanged - this is purely a local visual modification.
+
+## 👥 Authors & Credits
+
+**LocalChannelRename** was collaboratively created by:
+
+- **Kilo Code** - Plugin development and BetterDiscord integration
+- **Grok (xAI)** - AI assistance and code optimization
+
+This plugin was built through collaborative development between human expertise and AI assistance to create a robust and user-friendly BetterDiscord plugin.
+
+### ⚠️ Support Notice
+**Important**: The primary developer (Kilo Code) has limited coding knowledge and may not be able to provide technical support or bug fixes. This plugin is provided as-is, and users should be aware that support may be limited or unavailable.
+
+For any issues, please check the troubleshooting section above or create an issue on GitHub. Community contributions are welcome!
+
 
 ## 🛠️ Technical Details
 
@@ -55,11 +73,13 @@ The plugin uses DOM manipulation to change how channel names are displayed in yo
 - **Real-time**: Updates channel names immediately when changes are made
 - **Safe**: No modifications to Discord's actual data or API calls
 
+
 ## 📋 Requirements
 
 - **Discord**: Stable version
 - **BetterDiscord**: Version 1.0.0 or higher
 - **Permissions**: Read/Write access to BetterDiscord plugins folder
+
 
 ## 🐛 Troubleshooting
 
@@ -76,6 +96,7 @@ The plugin uses DOM manipulation to change how channel names are displayed in yo
 ### Settings Not Saving
 - Ensure BetterDiscord has proper file system permissions
 - Try disabling and re-enabling the plugin
+
 
 ## 📄 Compatibility
 
@@ -97,12 +118,6 @@ stable 1.12.7
 - Discord Stable channel
 - BetterDiscord stable releases
 
-## 👥 Authors & Credits
-
-**LocalChannelRename** was collaboratively created by:
-
-- **Kilo Code** - Plugin development and BetterDiscord integration
-- **Grok (xAI)** - AI assistance and code optimization
 
 ## 🤝 Contributing
 
@@ -112,9 +127,11 @@ stable 1.12.7
 4. Test thoroughly
 5. Submit a pull request
 
+
 ## ⚠️ Disclaimer
 
 This plugin is not affiliated with Discord Inc. or BetterDiscord. Use at your own risk. The plugin modifies the Discord client interface locally and does not violate Discord's Terms of Service as it doesn't interact with Discord's servers or APIs.
+
 
 ## 📊 Version History
 

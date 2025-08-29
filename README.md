@@ -150,6 +150,24 @@ This plugin is not affiliated with Discord Inc. or BetterDiscord. Use at your ow
 - Better error handling
 - Enhanced logging for debugging
 
+### v1.3.0
+- **Added**: Support for private channels and DMs
+- **Enhanced**: Channel ID extraction from various Discord DOM patterns
+- **Improved**: Better handling of different channel types
+- **Fixed**: Issues with channel detection in complex server structures
+
+### v1.2.0
+- **Added**: Keyboard shortcut for quick channel renaming (Ctrl+Shift+E)
+- **Enhanced**: Real-time channel name updates
+- **Improved**: Settings panel user interface
+- **Added**: Better error handling and user feedback
+
+### v1.1.0
+- **Added**: Basic settings panel for managing renames
+- **Enhanced**: Improved channel detection reliability
+- **Fixed**: Issues with channel name persistence
+- **Added**: Basic logging for debugging
+
 ### v1.0.0
 - Initial release
 - Basic channel renaming functionality

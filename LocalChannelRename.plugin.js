@@ -1,7 +1,7 @@
 /**
  * @name LocalChannelRename
  * @description Allows you to rename channels locally on Discord.
- * @version 1.4.0
+ * @version 1.5.0
  * @author Kilo Code & thenightmvre
  */
 
@@ -16,8 +16,8 @@ module.exports = class LocalChannelRename {
 
     getName() { return "LocalChannelRename"; }
     getDescription() { return "Allows you to rename channels locally on Discord."; }
-    getVersion() { return "1.4.0"; }
-    getAuthor() { return "Kilo Code & thenightmvre"; }
+    getVersion() { return "1.5.0"; }
+    getAuthor() { return "Kilo Code& thenightmvre"; }
 
     start() {
         console.log(`${this.pluginName}: Starting plugin`);
@@ -36,15 +36,19 @@ module.exports = class LocalChannelRename {
 
         // Use MutationObserver to watch for channel list changes
         const observer = new MutationObserver((mutations) => {
+            let hasChanges = false;
             mutations.forEach((mutation) => {
-                if (mutation.type === 'childList') {
-                    mutation.addedNodes.forEach((node) => {
-                        if (node.nodeType === Node.ELEMENT_NODE) {
-                            this.renameChannelsInDOM(node);
-                        }
-                    });
+                if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+                    hasChanges = true;
                 }
             });
+
+            if (hasChanges) {
+                console.log(`${this.pluginName}: DOM changes detected, re-applying renames`);
+                setTimeout(() => {
+                    this.renameAllChannelsInDOM();
+                }, 500); // Small delay to let DOM settle
+            }
         });
 
         // Start observing the channel list - try multiple selectors
@@ -81,6 +85,11 @@ module.exports = class LocalChannelRename {
             this.renameAllChannelsInDOM();
         }, 2000);
 
+        // Set up periodic check for channel list changes (in case MutationObserver misses updates)
+        setInterval(() => {
+            this.renameAllChannelsInDOM();
+        }, 5000); // Check every 5 seconds
+
         console.log(`${this.pluginName}: DOM-based renaming setup complete`);
     }
 
@@ -98,6 +107,7 @@ module.exports = class LocalChannelRename {
 
     renameAllChannelsInDOM() {
         console.log(`${this.pluginName}: Renaming all channels in DOM`);
+        console.log(`${this.pluginName}: Currently configured renames:`, this.renamedChannels);
 
         // Try multiple selectors for channel elements
         const selectors = [
@@ -206,9 +216,11 @@ module.exports = class LocalChannelRename {
                     }
 
                     if (channelId && this.renamedChannels[channelId]) {
-                        console.log(`${this.pluginName}: Found channel ${channelId} with selector "${selector}"`);
+                        console.log(`${this.pluginName}: Found channel ${channelId} with selector "${selector}" - applying rename: "${this.renamedChannels[channelId]}"`);
                         this.applyNameToElement(el, this.renamedChannels[channelId]);
                         foundElements = true;
+                    } else if (channelId) {
+                        console.log(`${this.pluginName}: Found channel ${channelId} with selector "${selector}" - no rename configured`);
                     }
                 });
             }

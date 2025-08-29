@@ -64,7 +64,8 @@ This plugin was built through collaborative development between human expertise 
 **Important**: The primary developer (Me and Kilo Code) has limited coding knowledge and may not be able to provide technical support or bug fixes. This plugin is provided as-is, and users should be aware that support may be limited or unavailable.
 
 For any issues, please check the troubleshooting section above or create an issue on GitHub. 
-Community contributions are welcome!
+
+Community contributions are welcome! ♥
 
 
 ## 🛠️ Technical Details

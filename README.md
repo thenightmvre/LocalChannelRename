@@ -65,7 +65,7 @@ This plugin was built through collaborative development between human expertise 
 
 For any issues, please check the troubleshooting section above or create an issue on GitHub. 
 
-Community contributions are welcome! ♥
+Community contributions are welcome! 🤍
 
 
 ## 🛠️ Technical Details

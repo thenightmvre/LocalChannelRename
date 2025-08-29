@@ -1,4 +1,4 @@
-# LocalChannelRename
+# Local Channel Rename
 
 A BetterDiscord plugin that allows you to locally rename Discord channels for a personalized experience.
 

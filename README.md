@@ -97,6 +97,13 @@ stable 1.12.7
 - Discord Stable channel
 - BetterDiscord stable releases
 
+## 👥 Authors & Credits
+
+**LocalChannelRename** was collaboratively created by:
+
+- **Kilo Code** - Plugin development and BetterDiscord integration
+- **Grok (xAI)** - AI assistance and code optimization
+
 ## 🤝 Contributing
 
 1. Fork the repository

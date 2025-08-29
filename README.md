@@ -61,9 +61,10 @@ The plugin uses DOM manipulation to change how channel names are displayed in yo
 This plugin was built through collaborative development between human expertise and AI assistance to create a robust and user-friendly BetterDiscord plugin.
 
 ### ⚠️ Support Notice
-**Important**: The primary developer (Kilo Code) has limited coding knowledge and may not be able to provide technical support or bug fixes. This plugin is provided as-is, and users should be aware that support may be limited or unavailable.
+**Important**: The primary developer (Me and Kilo Code) has limited coding knowledge and may not be able to provide technical support or bug fixes. This plugin is provided as-is, and users should be aware that support may be limited or unavailable.
 
-For any issues, please check the troubleshooting section above or create an issue on GitHub. Community contributions are welcome!
+For any issues, please check the troubleshooting section above or create an issue on GitHub. 
+Community contributions are welcome!
 
 
 ## 🛠️ Technical Details

@@ -11,7 +11,7 @@ A BetterDiscord plugin that allows you to locally rename Discord channels for a 
 
 ## 📦 Installation
 
-1. Download `LocalChannelRename.plugin.js` from the [Releases]([https://github.com/thenightmvre/LocalChannelRename/releases/tag/DiscordPlugin]) page
+1. Download `LocalChannelRename.plugin.js` from the [Releases](https://github.com/thenightmvre/LocalChannelRename/releases/tag/DiscordPlugin) page
 2. Place the file in your BetterDiscord plugins folder:
    - Windows: `%APPDATA%\BetterDiscord\plugins\`
    - macOS: `~/Library/Application Support/BetterDiscord/plugins/`
@@ -105,22 +105,9 @@ stable 1.12.7
 4. Test thoroughly
 5. Submit a pull request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## ⚠️ Disclaimer
 
 This plugin is not affiliated with Discord Inc. or BetterDiscord. Use at your own risk. The plugin modifies the Discord client interface locally and does not violate Discord's Terms of Service as it doesn't interact with Discord's servers or APIs.
-
-## 🆘 Support
-
-If you encounter issues:
-1. Check the [Issues](https://github.com/yourusername/LocalChannelRename/issues) page
-2. Create a new issue with:
-   - Your Discord and BetterDiscord versions
-   - Steps to reproduce the problem
-   - Any error messages from the console
 
 ## 📊 Version History
 
